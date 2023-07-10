@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Meu Cassino Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ricaria Cassino</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Bem-vindo ao Meu Cassino Online</h1>
+    <h1><span>R</span>icaria Cassino</h1>
     <nav>
-      <ul>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">&#9776;</label>
+      <ul class="menu">
         <li><a href="index.html">Início</a></li>
         <li><a href="jogos.html">Jogos</a></li>
         <li><a href="promocoes.html">Promoções</a></li>
@@ -19,11 +22,21 @@
 
   <main>
     <h2>Destaques</h2>
-    <p>Aqui você pode destacar os jogos populares, promoções atuais ou outras informações relevantes.</p>
+    <p>Aqui você pode destacar informações importantes sobre o Ricaria Cassino.</p>
   </main>
 
   <footer>
-    <p>&copy; 2023 Meu Cassino Online. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Ricaria Cassino. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    // Toggle do menu para dispositivos móveis
+    var menuToggle = document.getElementById("menu-toggle");
+    var menu = document.querySelector(".menu");
+
+    menuToggle.addEventListener("change", function() {
+      menu.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
