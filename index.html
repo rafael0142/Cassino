@@ -1,42 +1,36 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ricaria Cassino</title>
+  <title>Ricaria Casino</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
   <header>
-    <h1><span>R</span>icaria Cassino</h1>
+    <h1>Ricaria Casino</h1>
     <nav>
-      <input type="checkbox" id="menu-toggle">
-      <label for="menu-toggle" class="menu-icon">&#9776;</label>
-      <ul class="menu">
-        <li><a href="index.html">Início</a></li>
-        <li><a href="jogos.html">Jogos</a></li>
-        <li><a href="promocoes.html">Promoções</a></li>
-        <li><a href="suporte.html">Suporte</a></li>
+      <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+      <ul class="menu" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="games.html">Games</a></li>
+        <li><a href="promotions.html">Promotions</a></li>
+        <li><a href="support.html">Support</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h2>Destaques</h2>
-    <p>Aqui você pode destacar informações importantes sobre o Ricaria Cassino.</p>
+    <!-- Conteúdo da página -->
   </main>
 
   <footer>
-    <p>&copy; 2023 Ricaria Cassino. Todos os direitos reservados.</p>
+    <p>&copy; 2023 Ricaria Casino. All rights reserved.</p>
   </footer>
 
-  <script>
-    // Toggle do menu para dispositivos móveis
-    var menuToggle = document.getElementById("menu-toggle");
-    var menu = document.querySelector(".menu");
-
-    menuToggle.addEventListener("change", function() {
-      menu.classList.toggle("active");
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
+
 </html>
