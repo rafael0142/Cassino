@@ -15,13 +15,12 @@ body, h1, h2, h3, p, ul, li {
 /* Estilos globais */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, #007bff, #0056b3);
   color: var(--cor-texto);
 }
 
 /* Cabeçalho */
 header {
-  background-color: var(--cor-primaria);
   padding: 20px;
   text-align: center;
 }
