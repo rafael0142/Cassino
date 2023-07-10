@@ -1,120 +1,49 @@
 /* styles.css */
 
-/* Reset de estilos */
-body, h1, h2, h3, p, ul, li {
-  margin: 0;
-  padding: 0;
+/* ... Código CSS anterior ... */
+
+/* Estilos do menu responsivo */
+nav {
+  text-align: right;
 }
 
-/* Definindo cores */
-:root {
-  --cor-primaria: #007bff; /* Azul */
-  --cor-secundaria: #ff4500; /* Laranja */
-  --cor-destaque: #ffc107; /* Amarelo */
-  --cor-texto: #333; /* Preto */
+.menu-icon {
+  display: none;
+  cursor: pointer;
+  font-size: 24px;
 }
 
-/* Estilos globais */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
-  color: var(--cor-texto);
+.menu {
+  display: inline-block;
+  margin-top: 10px;
 }
 
-/* Cabeçalho */
-header {
-  background-color: var(--cor-primaria);
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  margin: 0;
-  font-size: 36px;
-  color: var(--cor-destaque);
-}
-
-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-nav ul li {
+.menu li {
   display: inline-block;
   margin-right: 10px;
 }
 
-nav ul li a {
+.menu a {
   color: var(--cor-texto);
   text-decoration: none;
   font-weight: bold;
 }
 
-/* Destaques */
-main {
-  padding: 20px;
-}
+@media only screen and (max-width: 600px) {
+  header h1 {
+    font-size: 28px;
+  }
 
-main h2 {
-  font-size: 24px;
-  color: var(--cor-primaria);
-}
+  .menu-icon {
+    display: inline-block;
+  }
 
-main p {
-  margin-bottom: 20px;
-}
+  .menu {
+    display: none;
+    text-align: left;
+  }
 
-/* Rodapé */
-footer {
-  background-color: var(--cor-primaria);
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-}
-
-footer p {
-  color: var(--cor-texto);
-}
-
-/* Estilos específicos para páginas */
-/* Adapte os estilos abaixo de acordo com cada página específica */
-
-/* Página Inicial */
-body.page-inicial main {
-  background-color: var(--cor-secundaria);
-}
-
-/* Página de Jogos */
-body.page-jogos main {
-  background-color: #fff;
-  text-align: center;
-}
-
-body.page-jogos ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-body.page-jogos li {
-  display: inline-block;
-  margin: 20px;
-  text-align: center;
-}
-
-body.page-jogos h3 {
-  font-size: 20px;
-  color: var(--cor-primaria);
-}
-
-/* Página de Promoções */
-body.page-promocoes main {
-  background-color: var(--cor-secundaria);
-}
-
-/* Página de Suporte */
-body.page-suporte main {
-  background-color: #fff;
-  text-align: center;
+  .menu.active {
+    display: block;
+  }
 }
