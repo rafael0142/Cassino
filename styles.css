@@ -9,8 +9,6 @@ body, h1, h2, h3, p, ul, li {
 /* Definindo cores */
 :root {
   --cor-primaria: #007bff; /* Azul */
-  --cor-secundaria: #ff4500; /* Laranja */
-  --cor-destaque: #ffc107; /* Amarelo */
   --cor-texto: #333; /* Preto */
 }
 
@@ -31,16 +29,7 @@ header {
 header h1 {
   margin: 0;
   font-size: 36px;
-  color: var(--cor-destaque);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-header h1 span {
-  font-size: 48px;
-  color: var(--cor-secundaria);
-  animation: bounce 2s infinite;
+  color: #fff;
 }
 
 nav ul {
@@ -55,15 +44,15 @@ nav ul li {
 }
 
 nav ul li a {
-  color: var(--cor-texto);
+  color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-size: 20px;
-  transition: transform 0.3s;
+  font-size: 18px;
+  transition: opacity 0.3s;
 }
 
 nav ul li a:hover {
-  transform: scale(1.1);
+  opacity: 0.8;
 }
 
 /* Destaques */
@@ -89,7 +78,7 @@ footer {
 }
 
 footer p {
-  color: var(--cor-texto);
+  color: #fff;
 }
 
 /* Estilos específicos para páginas */
@@ -97,12 +86,12 @@ footer p {
 
 /* Página Inicial */
 body.page-inicial main {
-  background-color: var(--cor-secundaria);
+  background-color: #fff;
 }
 
 /* Página de Jogos */
 body.page-jogos main {
-  background-color: #fff;
+  background-color: #f8f8f8;
   text-align: center;
 }
 
@@ -125,76 +114,11 @@ body.page-jogos h3 {
 
 /* Página de Promoções */
 body.page-promocoes main {
-  background-color: var(--cor-secundaria);
+  background-color: #fff;
 }
 
 /* Página de Suporte */
 body.page-suporte main {
-  background-color: #fff;
+  background-color: #f8f8f8;
   text-align: center;
-}
-
-/* Estilos do menu responsivo */
-nav {
-  text-align: right;
-}
-
-.menu-icon {
-  display: none;
-  cursor: pointer;
-  font-size: 24px;
-}
-
-.menu {
-  display: inline-block;
-  margin-top: 10px;
-}
-
-.menu li {
-  display: inline-block;
-  margin-right: 10px;
-}
-
-.menu a {
-  color: var(--cor-texto);
-  text-decoration: none;
-  font-weight: bold;
-}
-
-@media only screen and (max-width: 600px) {
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  header h1 {
-    font-size: 28px;
-    width: 100%;
-  }
-
-  .menu-icon {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: var(--cor-primaria);
-    width: 100%;
-    text-align: center;
-    padding: 10px 0;
-  }
-
-  .menu.active {
-    display: block;
-  }
-
-  .menu li {
-    display: block;
-    margin-bottom: 10px;
-  }
 }
