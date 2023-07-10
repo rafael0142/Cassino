@@ -32,20 +32,15 @@ header h1 {
   margin: 0;
   font-size: 36px;
   color: var(--cor-destaque);
-  position: relative;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-header h1::after {
-  content: "Two";
-  position: absolute;
-  top: -10px;
-  right: -5px;
-  font-size: 24px;
-  font-weight: normal;
+header h1 span {
+  font-size: 48px;
   color: var(--cor-secundaria);
-  transform: skew(-10deg);
-  display: inline-block;
+  animation: bounce 2s infinite;
 }
 
 nav ul {
@@ -171,10 +166,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
   }
 
   header h1 {
     font-size: 28px;
+    width: 100%;
   }
 
   .menu-icon {
